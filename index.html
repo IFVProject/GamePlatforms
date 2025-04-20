@@ -13,37 +13,59 @@
   </head>
 
   <body>
-    <!-- create an SVG canvas for us to modify -->
-    <div id="container">
-        <div id="div1">
-            <h2>This class has 30 students</h2>
-            <p>Each black box represents an individual student in our <b>"Intro to Information Visualization"</b> class.</p>
-        </div>
-        <div id="div2">
-            <h2>Brown eyes</h2>
-            <p>More than <b>half</b> of the class has brown eyes!</p>
-        </div>
-        <div id="div3">
-            <h2>Blue eyes</h2>
-            <p>About a <b>quarter</b> of the class has blue eyes!</p>
-        </div>
-        <div id="div4">
-            <h2>Green eyes</h2>
-            <p>Only <b>one student</b> has green eyes!</p>
-        </div>
-        <div id="div5">
-            <h1>Credits</h1>
-            <p>Stephen MacNeil</p>
-            <p>Baron Watts</p>
-            <p>Russell Goldenberg</p>
+    <h1 class="title center-align">PC Game Platforms</h1>
 
+    <div id="content">
+        <!-- SVG that will contain all the visulization -->
+        <div class="fixed">
+            <svg id="canvas" width="500" height="500"></svg>
+        </div>
+
+        <!-- Each div will contain the descriptions-->
+        <div id="container">
+            <div id="intro">
+                <p>This is introduction to PC game platforms - what it is, what platforms we are analyzing, why is it meaningful
+                    <br>
+                    Steam
+                    <br>
+                    Epic Games
+                    <br>
+                    Xbox Games
+                </p>
+            </div>
+            <div id="div1">
+                <h2>This class has 30 students</h2>
+                <p>Each black box represents an individual student in our <b>"Intro to Information Visualization"</b> class.</p>
+            </div>
+            <div id="div2">
+                <h2>Brown eyes</h2>
+                <p>More than <b>half</b> of the class has brown eyes!</p>
+            </div>
+            <div id="div3">
+                <h2>Blue eyes</h2>
+                <p>About a <b>quarter</b> of the class has blue eyes!</p>
+            </div>
+            <div id="div4">
+                <h2>Green eyes</h2>
+                <p>Only <b>one student</b> has green eyes!</p>
+            </div>
+            <div id="div5">
+                <h1>Credits</h1>
+                <p>Stephen MacNeil</p>
+                <p>Baron Watts</p>
+                <p>Russell Goldenberg</p>
+            </div>
         </div>
     </div>
-    <div class="fixed">
-        <svg id="canvas" width="500" height="500"></svg>
-    </div>
+    
+    
         
     <!-- load our custom D3 code (must happen after D3 is loaded) -->
-    <script src="./scrolly.js"></script>
+    <script src="/JS/graph1.js"></script>
+    <script src="/JS/graph2.js"></script>
+    <script src="/JS/graph3.js"></script>
+    <script src="/JS/graph4.js"></script>
+    <script src="/JS/scrolly.js"></script>
+    
   </body>
 </html>

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600');
+
+body{
+    height: 100%;
+    padding: 50px;
+    scroll-behavior: smooth;
+    color: #666;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+ }
+
+.fixed {
+    position: fixed;
+    max-width: 600px;
+    height: 500px;
+    top: 11vw;
+    left: 15vw;
+    float: right;
+}
+
+#container {
+  height: 100vw;
+  max-width: 600px;
+  width: 100vw;
+  position: absolute;
+  line-height: 1.5;
+  margin-left: 45vw;
+  margin-right: 10vw;
+}
+
+#container > div {
+    height: 1200px;
+    display: block;
+    padding: 0 45px;
+}
+
+.tick > line {
+    color: rgb(194, 194, 194);
+    opacity: 0.5;
+}
+
+.center-align{
+  text-align: center;
+}
+.title{
+  color: blue;
+}
+#intro{
+  margin-left: -30vw;
+}
