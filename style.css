@@ -48,3 +48,17 @@ body{
 #intro{
   margin-left: -30vw;
 }
+#tooltip {
+  position: fixed;  /* Absolute position to control placement */
+  background-color: #fff;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: #333;
+  pointer-events: none; /* Ensures the tooltip doesn't block interactions with the canvas */
+  transition: opacity 0.2s ease-in-out;
+  z-index: 15; /* Ensures the tooltip stays on top of the SVG */
+}
