@@ -7,8 +7,13 @@ function graph1(){
         }
     }
 
-    //grab svg element
+    //grab svg element and clean it with a fade out animation
     let svg = d3.select("#canvas");
+    svg.selectAll("*")
+    .transition()
+    .duration(300)
+    .style("opacity", 0)
+    .remove();
 
     //start creating visulization
     let g1 = svg.selectAll('rect')
