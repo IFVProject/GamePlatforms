@@ -5,6 +5,7 @@ function graph3() {
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
 
+
     let svg = d3.select("#canvas")
         .attr("width", width)
         .attr("height", height);
