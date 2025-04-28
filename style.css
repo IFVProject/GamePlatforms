@@ -4,7 +4,7 @@ body{
     height: 100%;
     padding: 50px;
     scroll-behavior: smooth;
-    color: #666;
+    color: #111010;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
  }
@@ -47,6 +47,8 @@ body{
 }
 #intro{
   margin-left: -30vw;
+  font-size: medium;
+  line-height: 2vw;
 }
 #tooltip {
   position: fixed;  /* Absolute position to control placement */
@@ -61,4 +63,10 @@ body{
   pointer-events: none; /* Ensures the tooltip doesn't block interactions with the canvas */
   transition: opacity 0.2s ease-in-out;
   z-index: 15; /* Ensures the tooltip stays on top of the SVG */
+  opacity: 0;
+}
+#references{
+  margin-left: -35vw;
+  font-size: medium;
+  line-height: 2vw;
 }
