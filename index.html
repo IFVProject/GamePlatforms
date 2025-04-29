@@ -56,6 +56,21 @@
             <div id="div3">
                 <h2>Blue eyes</h2>
                 <p>About a <b>quarter</b> of the class has blue eyes!</p>
+                <button id="switch">Switch Graph</button>
+                <script>
+                    let showingFirst = true;
+
+                    d3.select("#switch").on("click", function() {
+                        d3.select("#canvas").selectAll("*").remove();
+
+                        if (showingFirst) {
+                            graph3a();
+                        } else {
+                            graph3();
+                        }
+                        showingFirst = !showingFirst;
+                    });
+                </script>
             </div>
             <div id="div4">
                 <h2>Green eyes</h2>
@@ -85,6 +100,7 @@
     <script src="JS/graph1.js"></script>
     <script src="JS/graph2.js"></script>
     <script src="JS/graph3.js"></script>
+    <script src="JS/graph3a.js"></script>
     <script src="JS/graph4.js"></script>
     <script src="JS/scrolly.js"></script>
     
