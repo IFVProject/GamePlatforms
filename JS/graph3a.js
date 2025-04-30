@@ -25,6 +25,18 @@ function graph3a() {
             .domain([0, d3.max(free)])
             .nice()
             .range([innerHeight, 0]);
+        
+        svg.append('text') //x-axis
+            .attr('class', 'axis-title') 
+            .attr('y', height -20) 
+            .attr('x', width - 65)  
+            .text('Platform'); 
+
+        svg.append('text') //y-axis
+            .attr('class', 'axis-title')
+            .attr('x', 5) 
+            .attr('y', 30) 
+            .text('Free Games'); 
 
         g.selectAll("rect")
             .data(data)
