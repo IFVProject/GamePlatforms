@@ -1,4 +1,4 @@
-function graph2(){
+async function graph2(){
     let width = 350;
     let height= 450;
 
@@ -9,6 +9,7 @@ function graph2(){
     .duration(300)
     .style("opacity", 0)
     .remove();
+    await wait(300);
 
     //load data
     d3.csv("Data/MAU.csv").then((data)=>{
