@@ -40,6 +40,18 @@ function graph3() {
         const color = d3.scaleOrdinal()
             .domain(discounts)
             .range(d3.schemeCategory10);
+        
+        svg.append('text') //x-axis
+            .attr('class', 'axis-title') 
+            .attr('y', height -20) 
+            .attr('x', width - 65)  
+            .text('Platform'); 
+
+        svg.append('text') //y-axis
+            .attr('class', 'axis-title')
+            .attr('x', 5) 
+            .attr('y', 30) 
+            .text('Games On Sale'); 
 
         // Add bars
         g.selectAll("g.layer")
@@ -86,6 +98,7 @@ function graph3() {
                 .text(discount)
                 .style("font-size", "12px")
                 .attr("alignment-baseline", "middle");
+
         });
 
         // Fade in everything

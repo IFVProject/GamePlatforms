@@ -62,23 +62,25 @@
                     But it hardly gives away free games.</p>
                 <h3>Epic games</h3>
                 <p>Epic games is well known for its <b>FreeGames</b> Strategy, and therefore it has the most free games offering to gamers.</p>
+                <button id="switch">Free Games</button>
                 <h3>Xbox games</h3>
                 <p>Xbox does a miserable job on the visualization. 
                     With a subscription fee, it has lowest number of games on sale and lowest new game offerring.
                     But its Game Pass with a subscription fee can let gamers play hundreds of games with a low instant cost.</p>
-                <button id="switch">Switch Graph</button>
                 <script>
-                    let showingFirst = true;
+                    window.showingFirst = true;
 
                     d3.select("#switch").on("click", function() {
                         d3.select("#canvas").selectAll("*").remove();
 
-                        if (showingFirst) {
+                        if (window.showingFirst) {
                             graph3a();
+                            d3.select("#switch").text("Games On Sale"); 
                         } else {
                             graph3();
+                            d3.select("#switch").text("Free Games"); 
                         }
-                        showingFirst = !showingFirst;
+                        window.showingFirst = !window.showingFirst;
                     });
                 </script>
             </div>
