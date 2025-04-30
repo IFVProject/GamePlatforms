@@ -21,6 +21,7 @@ function graphClean(){
     let svg = d3.select("#canvas");
     svg.selectAll("*").remove();
 }
-
-   
 })()
+function wait(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}

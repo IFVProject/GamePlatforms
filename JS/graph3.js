@@ -1,4 +1,4 @@
-function graph3() {
+async function graph3() {
     const width = 500;
     const height = 500;
     const margin = { top: 50, right: 50, bottom: 50, left: 50 };
@@ -15,6 +15,7 @@ function graph3() {
         .duration(300)
         .style("opacity", 0)
         .remove();
+    await wait(300);
 
     d3.json("Data/SalesEvents.json").then(data => {
         const platforms = data.map(d => d.platform);

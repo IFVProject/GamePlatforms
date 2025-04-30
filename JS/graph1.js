@@ -1,4 +1,4 @@
-function graph1() {
+async function graph1() {
 
   //grab svg element and clean it with a fade out animation
   let svg = d3.select("#canvas"),
@@ -6,6 +6,7 @@ function graph1() {
           width = +svg.attr("width") - margin.left - margin.right,
           height = +svg.attr("height") - margin.top - margin.bottom;
   svg.selectAll("*").transition().duration(300).style("opacity", 0).remove();
+  await wait(300);
   svg.append("rect")
   .attr("x", 0)
   .attr("y", 0)
